@@ -49,8 +49,8 @@ const booknames = (booksData) => {
             div.innerHTML = `
             <img src="https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" alt="">
             <h1>${book.title}</h1>
-            <p><span class="fw-bold">author name: </span> ${book.author_name[0] ? book.author_name[0] : ''}</p >
-            <p><span class="fw-bold">publisher: </span>${book.publisher[0] ? book.publisher[0] : ''}</p>
+            <p><span class="fw-bold">author name: </span> ${book.author_name ? book.author_name[0] : ''}</p >
+            <p><span class="fw-bold">publisher: </span>${book.publisher ? book.publisher[0] : ''}</p>
             <p><span class="fw-bold">publish year: </span>${book.first_publish_year ? book.first_publish_year : ''}</p>
             `;
             bookList.appendChild(div);
