@@ -31,6 +31,7 @@ const search = () => {
 
 
 const booknames = (booksData) => {
+    document.getElementById('search-field').value = '';
     bookNumbers.style.display = 'block';
     bookNumbers.innerHTML = `There are ${booksData.numFound} numbers of book found`;    //how much book found
     const books = booksData.docs;
