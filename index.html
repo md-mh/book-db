@@ -6,32 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Archive</title>
+    <!-- bootstrap css link  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- custom css link  -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="container py-5">
     <h1 class="text-primary text-center fw-bold">Book Archive</h1>
 
+    <!-- search option  -->
     <div class="input-group mb-3 w-50 mx-auto">
         <input id="search-field" type="text" class="form-control" placeholder="Search the book name">
         <button onclick=" search()" class="btn btn-outline-secondary" type="button" id="button-search">Search</button>
     </div>
+
+    <!-- blank search error -->
     <p id="error" style="color: red;" class="text-center">write book name in search field</p>
+
+    <!-- numbers of book  -->
     <p id="booknumbers" class="fw-bold"></p>
+
+    <!-- wrong keyword error -->
+    <h2 id="nobook" class="text-warning fw-bold text-center">Please search a right book name</h2>
+
+    <!-- spinner  -->
     <div class="d-flex justify-content-center">
         <div id="spinner" class="spinner-border" role="status">
             <span class="visually-hidden">Loading...</span>
         </div>
     </div>
-    <h2 id="nobook" class="text-warning fw-bold text-center"></h2>
-
+    <!-- book list by search results -->
     <div id="books" class="row g-4"> </div>
 
+    <!-- bootstrap javascript link   -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <!-- custom js link  -->
     <script src="script.js"></script>
 </body>
 

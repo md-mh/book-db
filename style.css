@@ -1,6 +1,7 @@
 /* import font  */
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 
+/* utility */
 body{
     font-family: 'Dosis', sans-serif;
 }
@@ -18,4 +19,7 @@ img{
 #spinner{
     display: none;
     margin: 170px auto;
+}
+#nobook{
+    display: none;
 }
